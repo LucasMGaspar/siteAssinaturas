@@ -74,6 +74,56 @@ const products = [
     affiliateLink: "https://pay.cakto.com.br/32ve2bk?affiliate=T7QQRKAn",
   },
   {
+    name: "VEO3 Ultra + Gemini",
+    image: "/images/veo3.png",
+    price: 250,
+    features: [
+      "Ativado na sua conta atual (no seu e-mail)",
+      "Créditos ilimitados para geração de vídeos",
+      "Acesso ao Gemini Ultra com todos os recursos",
+      "Afiliação inclusa: revenda e lucre você também",
+    ],
+    highlight: "PREMIUM",
+    affiliateLink: "https://pay.cakto.com.br/32ve2bk?affiliate=T7QQRKAn",
+  },
+  {
+    name: "Sora 2",
+    image: "/images/sora.png",
+    price: 197,
+    features: [
+      "Acesso completo ao Sora 2 da OpenAI",
+      "Geração de vídeos com IA avançada",
+      "Conta 100% privada com login fornecido",
+      "Afiliação inclusa: revenda e lucre você também",
+    ],
+    highlight: "NOVIDADE",
+    affiliateLink: "https://pay.cakto.com.br/32ve2bk?affiliate=T7QQRKAn",
+  },
+  {
+    name: "Picsart Pro",
+    image: "/images/picsart.png",
+    price: 47,
+    features: [
+      "Conta 100% privada com login novo",
+      "Todos os recursos Pro liberados",
+      "Ferramentas de edição avançadas com IA",
+      "Afiliação inclusa: revenda e lucre você também",
+    ],
+    affiliateLink: "https://pay.cakto.com.br/97de2xb?affiliate=pNpMY48W",
+  },
+  {
+    name: "Manus IA",
+    image: "/manus.jpg",
+    price: 97,
+    features: [
+      "Acesso completo à plataforma Manus IA",
+      "Automação de tarefas com inteligência artificial",
+      "Conta 100% privada com login fornecido",
+      "Afiliação inclusa: revenda e lucre você também",
+    ],
+    affiliateLink: "https://pay.cakto.com.br/aopm7cg?affiliate=P7grkPRw",
+  },
+  {
     name: "Spotify Premium",
     image: "/images/spotify.png",
     price: 97,
@@ -109,7 +159,6 @@ const products = [
     ],
     affiliateLink: "https://pay.cakto.com.br/k8n7av6?affiliate=XfQFM77F",
   },
-
   {
     name: "Netflix Premium",
     image: "/netflix.jpg",
@@ -124,51 +173,32 @@ const products = [
   },
 ]
 
-const benefits = [
-  {
-    icon: Wallet,
-    title: "Economia Inteligente",
-    description: "Corte real de custos mensais. Pague uma vez e use o ano inteiro sem surpresas na fatura.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Segurança Garantida",
-    description: "Pagamento 100% seguro com garantia incondicional de 7 dias. Sua satisfação é nossa prioridade.",
-  },
-  {
-    icon: Timer,
-    title: "Ativação Expressa",
-    description:
-      "Acesso liberado em até 2 horas após confirmação. Nossa equipe trabalha rápido para você começar logo.",
-  },
-]
-
 const steps = [
   {
     number: "01",
-    title: "Escolha Seu Plano",
-    description: "Selecione a plataforma que você mais usa e veja a economia anual",
+    title: "Escolha seu produto",
+    description: "Selecione a plataforma que você quer acessar por 12 meses completos com um único pagamento",
   },
   {
     number: "02",
-    title: "Realize o Pagamento",
-    description: "Pagamento único e seguro. Aceitamos PIX, cartão e outras formas",
+    title: "Finalize o pagamento",
+    description: "Clique em Garantir Acesso Anual e complete o pagamento 100% seguro pela CaktoPay",
   },
   {
     number: "03",
-    title: "Receba os Dados",
-    description: "Você recebe as instruções e dados de acesso por e-mail ou WhatsApp",
+    title: "Receba acesso imediato",
+    description: "Você receberá um e-mail com o link para solicitar ativação no WhatsApp. Atendimento por ordem de chegada",
   },
   {
     number: "04",
-    title: "Aproveite por 12 Meses",
-    description: "Use sem limites durante todo o ano com suporte sempre disponível",
+    title: "Comece a lucrar",
+    description: "Pegue seu link de afiliado exclusivo e revenda para amigos, família ou nas redes sociais",
   },
 ]
 
 export default function Home() {
-  const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20planos%20anuais"
-  const instagramUrl = "https://instagram.com/seuusuario"
+  const whatsappUrl = "https://wa.me/5527996698223?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20planos%20anuais"
+  const instagramUrl = "https://instagram.com/lucasgaspardigital"
 
   return (
     <div className="min-h-screen">
@@ -178,109 +208,52 @@ export default function Home() {
       <section className="relative overflow-hidden aurora-bg grid-pattern">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background pointer-events-none" />
 
-        <div className="container mx-auto px-4 py-20 lg:py-32 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column */}
-            <div className="space-y-6 text-center lg:text-left">
-              <Badge className="bg-primary/20 text-primary border-primary/30 inline-flex items-center gap-2">
-                <Sparkles className="h-3 w-3" />
-                Planos Anuais Premium
-              </Badge>
+        <div className="container mx-auto px-4 py-12 md:py-20 lg:py-32 relative z-10">
+          <div className="text-center space-y-6 md:space-y-8 max-w-4xl mx-auto">
+            <Badge className="bg-primary/20 text-primary border-primary/30 inline-flex items-center gap-1.5 md:gap-2 text-xs md:text-sm px-3 md:px-4 py-1.5 md:py-2">
+              <Sparkles className="h-3.5 w-3.5 md:h-4 md:w-4" />
+              <span className="hidden sm:inline">Oferta Anual Exclusiva - Economia Real</span>
+              <span className="sm:hidden">Oferta Exclusiva</span>
+            </Badge>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-                Acesso Anual às <span className="animate-gradient">Melhores Plataformas</span> com Um Único Pagamento
-              </h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              Ferramentas Digitais Premium <br />
+              <span className="animate-gradient">com Pagamento Único</span>
+            </h1>
 
-              <p className="text-lg text-muted-foreground leading-relaxed text-balance">
-                Chega de pagar mensalidades caras! Garanta 12 meses de acesso completo às principais ferramentas
-                digitais com economia agressiva e pagamento único.
-              </p>
+            <p className="text-base md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto px-2">
+              Pague uma vez, use o ano inteiro. <br />
+              Sem mensalidades, sem surpresas. Economize até 90% nas melhores plataformas.
+            </p>
 
-              <div className="flex flex-wrap gap-4 justify-center lg:justify-start pt-4">
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <CheckCircle2 className="h-5 w-5 text-primary" />
-                  <span className="text-sm">Pagamento Único</span>
-                </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <CheckCircle2 className="h-5 w-5 text-primary" />
-                  <span className="text-sm">Garantia 7 Dias</span>
-                </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <CheckCircle2 className="h-5 w-5 text-primary" />
-                  <span className="text-sm">Suporte Dedicado</span>
-                </div>
+            {/* 4 Benefícios */}
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-4 md:gap-6 justify-center pt-4 md:pt-6">
+              <div className="flex items-center justify-center gap-1.5 md:gap-2 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-full px-3 md:px-4 py-1.5 md:py-2">
+                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0" />
+                <span className="text-xs md:text-sm font-medium">Pagamento único</span>
+              </div>
+              <div className="flex items-center justify-center gap-1.5 md:gap-2 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-full px-3 md:px-4 py-1.5 md:py-2">
+                <Zap className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0" />
+                <span className="text-xs md:text-sm font-medium">Acesso imediato</span>
+              </div>
+              <div className="flex items-center justify-center gap-1.5 md:gap-2 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-full px-3 md:px-4 py-1.5 md:py-2">
+                <ShieldCheck className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0" />
+                <span className="text-xs md:text-sm font-medium">7 dias garantia</span>
+              </div>
+              <div className="flex items-center justify-center gap-1.5 md:gap-2 bg-card/50 backdrop-blur-sm border border-primary/20 rounded-full px-3 md:px-4 py-1.5 md:py-2">
+                <Wallet className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0" />
+                <span className="text-xs md:text-sm font-medium">Revenda e lucre</span>
               </div>
             </div>
 
-            {/* Right Column */}
-            <Card className="p-8 border-primary/30 bg-card/80 backdrop-blur-xl glow-ring">
-              <Badge className="bg-accent/20 text-accent border-accent/30 mb-6">🔥 Oferta Premium</Badge>
-
-              <h3 className="text-2xl font-bold text-foreground mb-6">Por que escolher o plano anual?</h3>
-
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-3">
-                  <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <Zap className="h-4 w-4 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Pagamento Único</p>
-                    <p className="text-sm text-muted-foreground">Sem mensalidades, sem surpresas</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <Timer className="h-4 w-4 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Ativação Rápida</p>
-                    <p className="text-sm text-muted-foreground">Comece a usar em até 2 horas</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <ShieldCheck className="h-4 w-4 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Garantia Total</p>
-                    <p className="text-sm text-muted-foreground">7 dias para testar sem riscos</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Button asChild size="lg" className="flex-1 bg-[#25D366] hover:bg-[#20BD5B] text-white">
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2"
-                  >
-                    <SiWhatsapp className="h-5 w-5" />
-                    WhatsApp
-                  </a>
-                </Button>
-
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="flex-1 border-primary/30 hover:bg-primary/10 bg-transparent"
-                >
-                  <a
-                    href={instagramUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2"
-                  >
-                    <SiInstagram className="h-5 w-5" />
-                    Instagram
-                  </a>
-                </Button>
-              </div>
-            </Card>
+            {/* CTA Button */}
+            <div className="flex justify-center pt-2 md:pt-4">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-base md:text-lg px-6 md:px-10 py-5 md:py-6 w-full sm:w-auto max-w-xs sm:max-w-none">
+                <a href="#planos" className="flex items-center justify-center gap-2">
+                  Ver Planos Disponíveis
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -288,19 +261,19 @@ export default function Home() {
       <ContactBar />
 
       {/* Products Section */}
-      <section id="planos" className="py-20 px-4">
+      <section id="planos" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
               Escolha Seu <span className="animate-gradient">Plano Anual</span>
             </h2>
-            <p className="text-muted-foreground text-balance max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-muted-foreground text-balance max-w-2xl mx-auto px-2">
               Todas as plataformas incluem pagamento único anual, ativação guiada, suporte via WhatsApp e possibilidade
               de revenda através do programa de afiliados
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
             {products.map((product, index) => (
               <ProductCard key={index} {...product} />
             ))}
@@ -308,52 +281,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-20 px-4 bg-secondary/30">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Por Que Escolher <span className="animate-gradient">Plano Anual?</span>
-            </h2>
-            <p className="text-muted-foreground text-balance">
-              Vantagens reais que fazem a diferença no seu bolso e na sua experiência
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {benefits.map((benefit, index) => (
-              <Card
-                key={index}
-                className="p-6 border-primary/20 bg-card/50 backdrop-blur-sm text-center hover:border-primary/40 transition-colors"
-              >
-                <div className="h-14 w-14 rounded-2xl bg-primary/20 flex items-center justify-center mx-auto mb-4 glow-ring">
-                  <benefit.icon className="h-7 w-7 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">{benefit.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* How It Works Section */}
-      <section id="como-funciona" className="py-20 px-4">
+      <section id="como-funciona" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
               Como <span className="animate-gradient">Funciona?</span>
             </h2>
-            <p className="text-muted-foreground text-balance">Processo simples e transparente em apenas 4 passos</p>
+            <p className="text-sm md:text-base text-muted-foreground text-balance">Processo simples e transparente em apenas 4 passos</p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
             {steps.map((step, index) => (
               <div key={index} className="relative">
-                <Card className="p-6 border-primary/20 bg-card/50 backdrop-blur-sm h-full hover:border-primary/40 transition-colors">
-                  <div className="text-5xl font-bold text-primary/20 mb-4">{step.number}</div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">{step.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                <Card className="p-4 md:p-6 border-primary/20 bg-card/50 backdrop-blur-sm h-full hover:border-primary/40 transition-colors">
+                  <div className="text-3xl md:text-5xl font-bold text-primary/20 mb-2 md:mb-4">{step.number}</div>
+                  <h3 className="text-sm md:text-lg font-bold text-foreground mb-1 md:mb-2">{step.title}</h3>
+                  <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{step.description}</p>
                 </Card>
 
                 {index < steps.length - 1 && (
@@ -365,62 +310,58 @@ export default function Home() {
         </div>
       </section>
 
- // Import the Testimonials component here
-
       <FAQ />
 
       {/* Final CTA Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-4xl">
-          <Card className="relative overflow-hidden border-primary/30 bg-gradient-to-br from-card via-card to-primary/5 p-12 glow-ring">
+          <Card className="relative overflow-hidden border-primary/30 bg-gradient-to-br from-card via-card to-primary/5 p-6 md:p-12 glow-ring">
             <div className="absolute inset-0 aurora-bg opacity-50" />
 
-            <div className="relative z-10 text-center space-y-6">
-              <Badge className="bg-accent/20 text-accent border-accent/30">💎 Oferta Exclusiva</Badge>
-
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground text-balance">
-                Pronto para <span className="animate-gradient">Economizar de Verdade?</span>
-              </h2>
-
-              <p className="text-lg text-muted-foreground text-balance max-w-2xl mx-auto">
-                Junte-se a milhares de pessoas que já estão economizando com nossos planos anuais. Suporte rápido,
-                ativação guiada e garantia total.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-                <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#20BD5B] text-white text-lg px-8">
-                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <SiWhatsapp className="h-5 w-5" />
-                    Falar com Especialista
-                  </a>
-                </Button>
-
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="border-primary/30 hover:bg-primary/10 text-lg px-8 bg-transparent"
-                >
-                  <a href={instagramUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <SiInstagram className="h-5 w-5" />
-                    Seguir no Instagram
-                  </a>
-                </Button>
+            <div className="relative z-10 text-center space-y-4 md:space-y-6">
+              {/* Foto de Perfil */}
+              <div className="flex justify-center">
+                <div className="w-20 h-20 md:w-28 md:h-28 rounded-full border-2 border-primary/50 overflow-hidden">
+                  <img
+                    src="/profile.jpg"
+                    alt="Foto de perfil"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
 
-              <div className="flex flex-wrap gap-6 justify-center pt-8 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <ShieldCheck className="h-5 w-5 text-primary" />
-                  <span>Pagamento Seguro</span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground text-balance">
+                Pronto para economizar?
+              </h2>
+
+              <p className="text-sm md:text-lg text-muted-foreground text-balance max-w-2xl mx-auto px-2">
+                Escolha seu plano anual, economize até 90% e ainda ganhe a oportunidade de lucrar revendendo.
+                Pagamento seguro, garantia de 7 dias e suporte dedicado.
+              </p>
+
+              <div className="flex flex-wrap gap-2 md:gap-4 justify-center pt-2 md:pt-4">
+                <div className="flex items-center gap-1.5 md:gap-2 border border-primary/30 rounded-full px-3 md:px-4 py-1.5 md:py-2 text-xs md:text-sm">
+                  <Zap className="h-3.5 w-3.5 md:h-4 md:w-4 text-primary" />
+                  <span>Acesso instantâneo</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary" />
-                  <span>Garantia 7 Dias</span>
+                <div className="flex items-center gap-1.5 md:gap-2 border border-primary/30 rounded-full px-3 md:px-4 py-1.5 md:py-2 text-xs md:text-sm">
+                  <ShieldCheck className="h-3.5 w-3.5 md:h-4 md:w-4 text-primary" />
+                  <span>Pagamento 100% seguro</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Timer className="h-5 w-5 text-primary" />
-                  <span>Ativação Rápida</span>
-                </div>
+              </div>
+
+              <div className="pt-4 md:pt-6 border-t border-border/30 mt-4 md:mt-6">
+                <p className="text-sm md:text-base text-muted-foreground">
+                  Siga no Instagram:{" "}
+                  <a
+                    href={instagramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline font-medium"
+                  >
+                    @lucasgaspardigital
+                  </a>
+                </p>
               </div>
             </div>
           </Card>
@@ -428,54 +369,29 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-primary/20 py-12 px-4">
+      <footer className="border-t border-primary/20 py-8 md:py-12 px-4">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-lg font-bold text-foreground">
-                  Planos <span className="text-primary">Premium</span>
-                </span>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                Planos anuais premium com economia real e suporte dedicado.
-              </p>
+          <div className="text-center space-y-4 md:space-y-6">
+            <p className="text-sm md:text-base text-muted-foreground">
+              Pagamento 100% seguro processado pela CaktoPay
+            </p>
+            <p className="text-xs md:text-sm text-muted-foreground">
+              7 dias de garantia • Suporte no WhatsApp • Afiliação inclusa em todos os planos
+            </p>
+            <div className="flex justify-center gap-4">
+              <a
+                href={instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <SiInstagram className="h-5 w-5" />
+                <span className="text-xs md:text-sm">Siga no Instagram</span>
+              </a>
             </div>
-
-            <div>
-              <h4 className="font-semibold text-foreground mb-4">Garantias</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>✓ Pagamento 100% Seguro</li>
-                <li>✓ Garantia Incondicional de 7 Dias</li>
-                <li>✓ Suporte Rápido via WhatsApp</li>
-                <li>✓ Ativação Guiada Passo a Passo</li>
-              </ul>
+            <div className="border-t border-border/50 pt-4 md:pt-6 text-xs md:text-sm text-muted-foreground">
+              <p>© 2026 Todos os direitos reservados.</p>
             </div>
-
-            <div>
-              <h4 className="font-semibold text-foreground mb-4">Legal</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Termos de Uso
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Política de Privacidade
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Política de Reembolso
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-border/50 pt-8 text-center text-sm text-muted-foreground">
-            <p>© 2026 Planos Premium. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>

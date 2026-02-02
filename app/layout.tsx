@@ -8,27 +8,13 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Verde Premium Club - Planos Anuais com Economia Real",
+  title: "Lucas Digital - Assinaturas Premium até 90% mais baratas",
   description:
-    "Acesso anual às melhores plataformas digitais com pagamento único. Canva Pro, ChatGPT Plus, Spotify, YouTube Premium e mais. Economia inteligente, suporte dedicado e possibilidade de revenda.",
-  generator: "v0.app",
-  keywords: ["assinatura anual", "plano premium", "canva pro", "chatgpt plus", "spotify premium", "youtube premium"],
+    "Acesso anual às melhores plataformas digitais com pagamento único. Canva Pro, ChatGPT Plus, Spotify, YouTube Premium e mais. Economia de até 90% e possibilidade de revenda.",
+  keywords: ["assinatura anual", "plano premium", "canva pro", "chatgpt plus", "spotify premium", "youtube premium", "lucas digital"],
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/profile.jpg",
+    apple: "/profile.jpg",
   },
 }
 

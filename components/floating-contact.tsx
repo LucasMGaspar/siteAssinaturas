@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { SiWhatsapp } from "react-icons/si"
 
 export function FloatingContact() {
-  const whatsappUrl = "https://wa.me/5511999999999?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20planos%20anuais"
+  const whatsappUrl = "https://wa.me/5527996698223?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20planos%20anuais"
 
   return (
     <Button
