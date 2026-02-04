@@ -35,7 +35,7 @@ const products = [
       "Todos os recursos do ChatGPT Plus liberados",
       "Afiliação inclusa: revenda e lucre você também",
     ],
-    affiliateLink: "https://pay.cakto.com.br/38cqnw3?affiliate=RwcA7Yni",
+    affiliateLink: "https://pay.cakto.com.br/393ist2?affiliate=GUGMbriK",
   },
   {
     name: "ChatGPT Plus Individual",
