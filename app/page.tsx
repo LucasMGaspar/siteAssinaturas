@@ -47,7 +47,7 @@ const products = [
       "Não precisa usar modo temporário",
       "Afiliação inclusa: revenda e lucre você também",
     ],
-    affiliateLink: "https://pay.cakto.com.br/aopm7cg?affiliate=P7grkPRw",
+    affiliateLink: "https://pay.cakto.com.br/3cm22tg?affiliate=c4LZLiWF",
   },
   {
     name: "CapCut Pro",
@@ -110,18 +110,6 @@ const products = [
       "Afiliação inclusa: revenda e lucre você também",
     ],
     affiliateLink: "https://pay.cakto.com.br/hszy52t_682828?affiliate=Ba83nAW5",
-  },
-  {
-    name: "Manus IA",
-    image: "/manus.jpg",
-    price: 97,
-    features: [
-      "Acesso completo à plataforma Manus IA",
-      "Automação de tarefas com inteligência artificial",
-      "Conta 100% privada com login fornecido",
-      "Afiliação inclusa: revenda e lucre você também",
-    ],
-    affiliateLink: "https://pay.cakto.com.br/aopm7cg?affiliate=P7grkPRw",
   },
   {
     name: "Spotify Premium",
