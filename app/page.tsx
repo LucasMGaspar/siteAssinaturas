@@ -59,7 +59,7 @@ const products = [
       "Todos os recursos Pro liberados",
       "Afiliação inclusa: revenda e lucre você também",
     ],
-    affiliateLink: "https://pay.cakto.com.br/97de2xb?affiliate=pNpMY48W",
+    affiliateLink: "https://pay.cakto.com.br/w2c37bz?affiliate=FBURR5Vj",
   },
   {
     name: "VEO3 Premium + Gemini",
