@@ -169,7 +169,7 @@ const products = [
       "Suporta até 4 telas simultâneas com 4K liberado",
       "Afiliação inclusa: revenda e lucre você também",
     ],
-    affiliateLink: "https://pay.cakto.com.br/6xej6yf?affiliate=gXEPJFfy",
+    affiliateLink: "https://pay.cakto.com.br/6xej6yf?affiliate=D7XUWMMW",
   },
 ]
 
