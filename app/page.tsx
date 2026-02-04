@@ -157,7 +157,7 @@ const products = [
       "YouTube Music Premium para toda família",
       "Afiliação inclusa: revenda e lucre você também",
     ],
-    affiliateLink: "https://pay.cakto.com.br/k8n7av6?affiliate=XfQFM77F",
+    affiliateLink: "https://pay.cakto.com.br/3asi6aj_610105?affiliate=s8Q9JLTb",
   },
   {
     name: "Netflix Premium",
