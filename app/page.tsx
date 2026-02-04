@@ -109,7 +109,7 @@ const products = [
       "Ferramentas de edição avançadas com IA",
       "Afiliação inclusa: revenda e lucre você também",
     ],
-    affiliateLink: "https://pay.cakto.com.br/97de2xb?affiliate=pNpMY48W",
+    affiliateLink: "https://pay.cakto.com.br/hszy52t_682828?affiliate=Ba83nAW5",
   },
   {
     name: "Manus IA",
