@@ -97,7 +97,7 @@ const products = [
       "Afiliação inclusa: revenda e lucre você também",
     ],
     highlight: "NOVIDADE",
-    affiliateLink: "https://pay.cakto.com.br/32ve2bk?affiliate=T7QQRKAn",
+    affiliateLink: "https://pay.cakto.com.br/wkx657d_642140?affiliate=takQ9H65",
   },
   {
     name: "Picsart Pro",
