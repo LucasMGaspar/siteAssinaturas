@@ -133,7 +133,7 @@ const products = [
       "Sem anúncios, qualidade máxima, modo offline",
       "Afiliação inclusa: revenda e lucre você também",
     ],
-    affiliateLink: "https://pay.cakto.com.br/hs8obwk?affiliate=TAHbtXyP",
+    affiliateLink: "https://pay.cakto.com.br/8maqvu9_619341?affiliate=rjDuCPNa",
   },
   {
     name: "YouTube Premium",
