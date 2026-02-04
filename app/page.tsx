@@ -84,7 +84,7 @@ const products = [
       "Afiliação inclusa: revenda e lucre você também",
     ],
     highlight: "PREMIUM",
-    affiliateLink: "https://pay.cakto.com.br/32ve2bk?affiliate=T7QQRKAn",
+    affiliateLink: "https://pay.cakto.com.br/3agsw5e?affiliate=XaxUsrEX",
   },
   {
     name: "Sora 2",
