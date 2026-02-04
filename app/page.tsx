@@ -23,7 +23,7 @@ const products = [
       "Afiliação inclusa: revenda e lucre você também",
     ],
     highlight: "MAIS VENDIDO",
-    affiliateLink: "https://pay.cakto.com.br/magvm7d?affiliate=XRCU3CzX",
+    affiliateLink: "https://pay.cakto.com.br/magvm7d?affiliate=Y7WQJF7h",
   },
   {
     name: "ChatGPT Plus Compartilhado",
