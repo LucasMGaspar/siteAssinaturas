@@ -71,7 +71,7 @@ const products = [
       "100% privado, sem necessidade de apagar histórico",
       "Afiliação inclusa: revenda e lucre você também",
     ],
-    affiliateLink: "https://pay.cakto.com.br/32ve2bk?affiliate=T7QQRKAn",
+    affiliateLink: "https://pay.cakto.com.br/3emkesc?affiliate=XaxUsrEX",
   },
   {
     name: "VEO3 Ultra + Gemini",
