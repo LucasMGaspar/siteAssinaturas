@@ -303,17 +303,17 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             {/* Card 1: Logo Grid - MAIN CARD */}
             <div className="logo-grid-card p-5 md:p-8">
               <div className="logo-grid-inner p-5 md:p-7 mb-5 md:mb-6">
-                <div className="grid grid-cols-5 gap-3 md:gap-4 justify-items-center">
+                <div className="grid grid-cols-5 gap-2.5 md:gap-4 justify-items-center">
                   {logoGridItems.map((item, i) => (
                     <div
                       key={i}
-                      className="logo-circle-lg"
+                      className="relative w-[48px] h-[48px] md:w-[64px] md:h-[64px] rounded-[14px] md:rounded-[18px] overflow-hidden shadow-md shadow-black/20 hover:scale-110 transition-all duration-300"
                     >
-                      <Image src={item.image} alt={item.name} width={36} height={36} className="object-contain w-7 h-7 md:w-8 md:h-8" />
+                      <Image src={item.image} alt={item.name} fill sizes="(max-width: 768px) 48px, 64px" className="object-cover" />
                     </div>
                   ))}
                 </div>
@@ -365,30 +365,9 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 4: Revenda e Lucre */}
-            <div className="logo-grid-card p-5 md:p-8">
-              <div className="logo-grid-inner p-5 md:p-7 mb-5 md:mb-6 flex items-center justify-center min-h-[180px] md:min-h-[220px] relative overflow-hidden">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,97,255,0.08)_0%,transparent_70%)]" />
-                <div className="flex flex-col items-center gap-4 relative">
-                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-3xl bg-gradient-blue flex items-center justify-center shadow-xl shadow-primary/30">
-                    <Wallet className="w-10 h-10 md:w-12 md:h-12 text-white" />
-                  </div>
-                  <div className="golden-banner px-4 py-1.5 rounded-full shadow-lg">
-                    <span className="text-xs md:text-sm font-bold">Afiliação Inclusa</span>
-                  </div>
-                </div>
-              </div>
-              <h3 className="text-xl md:text-2xl font-bold text-foreground text-center mb-2">Revenda e Lucre</h3>
-              <p className="text-xs md:text-sm text-muted-foreground text-center leading-relaxed">
-                Todos os planos incluem link de afiliado exclusivo. Revenda e ganhe comissão por cada venda
-              </p>
-            </div>
           </div>
         </div>
       </section>
-
-      <div className="gradient-divider mx-auto max-w-4xl" />
-      <ContactBar />
 
       {/* ===== PRODUCTS ===== */}
       <section id="planos" className="py-14 md:py-20 px-4">
@@ -471,17 +450,11 @@ export default function Home() {
                 Escolha seu plano anual, economize até 90% e ainda ganhe a oportunidade de lucrar revendendo.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <div className="flex justify-center">
                 <Button asChild size="lg" className="bg-gradient-blue hover:opacity-90 text-white text-sm md:text-base px-8 md:px-10 py-5 md:py-6 rounded-xl glow-button font-bold">
                   <a href="#planos" className="flex items-center justify-center gap-2">
                     Escolher Meu Plano
                     <ArrowRight className="h-4 w-4" />
-                  </a>
-                </Button>
-                <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#20BD5B] text-white text-sm md:text-base px-8 md:px-10 py-5 md:py-6 rounded-xl font-bold">
-                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
-                    <SiWhatsapp className="h-4 w-4" />
-                    Falar no WhatsApp
                   </a>
                 </Button>
               </div>
@@ -534,7 +507,6 @@ export default function Home() {
         </div>
       </footer>
 
-      <FloatingContact />
     </div>
   )
 }

@@ -27,15 +27,15 @@ export function LogoCarousel() {
           {[...logos, ...logos].map((logo, index) => (
             <div
               key={index}
-              className="flex-shrink-0 mx-4 md:mx-6 flex flex-col items-center gap-2 group cursor-pointer"
+              className="flex-shrink-0 mx-3 md:mx-5 flex flex-col items-center gap-1.5 md:gap-2 group cursor-pointer"
             >
-              <div className="logo-circle w-14 h-14 md:w-[72px] md:h-[72px] rounded-full flex items-center justify-center overflow-hidden p-2.5 md:p-3">
+              <div className="relative w-[52px] h-[52px] md:w-[68px] md:h-[68px] rounded-[14px] md:rounded-[18px] overflow-hidden shadow-lg shadow-black/20 transition-all duration-300 group-hover:scale-110">
                 <Image
                   src={logo.image}
                   alt={logo.name}
-                  width={40}
-                  height={40}
-                  className="object-contain w-full h-full transition-all duration-300 group-hover:scale-110"
+                  fill
+                  sizes="(max-width: 768px) 52px, 68px"
+                  className="object-cover"
                 />
               </div>
               <span className="text-[10px] md:text-xs text-muted-foreground font-medium group-hover:text-foreground transition-colors whitespace-nowrap">
