@@ -182,6 +182,18 @@ const logoGridItems = [
   { image: "/images/sora.png", name: "Sora 2" },
 ]
 
+const productHighlights = [
+  { image: "/images/canva.png", name: "Canva Pro", price: 37, description: "Design profissional com templates, remoção de fundo e Kit Marca. Ativado no seu e-mail.", tag: "MAIS VENDIDO" },
+  { image: "/images/chatgpt.png", name: "ChatGPT Plus", price: 47, description: "IA mais poderosa do mundo com GPT-4o, geração de imagens e análise de dados.", tag: null },
+  { image: "/images/spotify.png", name: "Spotify Premium", price: 97, description: "Música sem anúncios, qualidade máxima e modo offline. Conta 100% privada.", tag: null },
+  { image: "/images/youtube.png", name: "YouTube Premium", price: 67, description: "Sem anúncios, reprodução em segundo plano e YouTube Music incluso.", tag: null },
+  { image: "/netflix.jpg", name: "Netflix Premium", price: 167.9, description: "Filmes e séries em 4K com até 4 telas simultâneas. Login privado.", tag: null },
+  { image: "/images/veo3.png", name: "VEO3 + Gemini", price: 97, description: "Geração de vídeos com IA do Google. 1200 créditos renovados por mês.", tag: null },
+  { image: "/images/picsart.png", name: "Picsart Pro", price: 47, description: "Edição avançada com IA, filtros profissionais e ferramentas exclusivas.", tag: null },
+  { image: "/images/capcut.png", name: "CapCut Pro", price: 47, description: "Edição de vídeo profissional com efeitos, legendas automáticas e muito mais.", tag: null },
+  { image: "/images/sora.png", name: "Sora 2", price: 197, description: "Geração de vídeos com a IA mais avançada da OpenAI. Conta 100% privada.", tag: "NOVIDADE" },
+]
+
 export default function Home() {
   const whatsappUrl = "https://wa.me/5527996698223?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20planos%20anuais"
   const instagramUrl = "https://instagram.com/lucasgaspardigital"
@@ -307,7 +319,7 @@ export default function Home() {
             {/* Card 1: Logo Grid - MAIN CARD */}
             <div className="logo-grid-card p-5 md:p-8">
               <div className="logo-grid-inner p-5 md:p-7 mb-5 md:mb-6">
-                <div className="grid grid-cols-5 gap-2.5 md:gap-4 justify-items-center">
+                <div className="flex flex-wrap justify-center gap-2.5 md:gap-4">
                   {logoGridItems.map((item, i) => (
                     <div
                       key={i}
@@ -365,6 +377,45 @@ export default function Home() {
               </p>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* ===== PRODUCT HIGHLIGHTS CAROUSEL ===== */}
+      <section className="py-10 md:py-16 overflow-hidden">
+        <div className="container mx-auto px-4 mb-8 md:mb-12">
+          <h2 className="text-center text-2xl sm:text-3xl md:text-5xl font-extrabold text-foreground">
+            Conheça cada <span className="text-gradient-blue">assinatura</span>
+          </h2>
+        </div>
+
+        <div className="relative">
+          <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-background to-transparent z-10" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-background to-transparent z-10" />
+
+          <div className="flex animate-scroll-left items-stretch">
+            {[...productHighlights, ...productHighlights].map((item, index) => (
+              <div key={index} className="flex-shrink-0 mx-2 md:mx-3 w-[260px] md:w-[300px]">
+                <div className="feature-card rounded-2xl p-5 md:p-6 h-full flex flex-col">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="relative w-[52px] h-[52px] md:w-[60px] md:h-[60px] rounded-[14px] md:rounded-[16px] overflow-hidden shadow-lg shadow-black/20 flex-shrink-0">
+                      <Image src={item.image} alt={item.name} fill sizes="60px" className="object-cover" />
+                    </div>
+                    <div>
+                      <h3 className="text-sm md:text-base font-bold text-foreground leading-tight">{item.name}</h3>
+                      <p className="text-primary font-extrabold text-lg md:text-xl">R$ {item.price % 1 === 0 ? item.price : item.price.toFixed(2).replace(".", ",")}</p>
+                    </div>
+                    {item.tag && (
+                      <span className="golden-banner px-2 py-0.5 rounded-full text-[9px] md:text-[10px] font-bold ml-auto">{item.tag}</span>
+                    )}
+                  </div>
+                  <p className="text-xs md:text-sm text-muted-foreground leading-relaxed flex-1">{item.description}</p>
+                  <div className="mt-4 pt-3 border-t border-white/10">
+                    <span className="text-[10px] md:text-xs text-muted-foreground">12 meses • Pagamento único</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
