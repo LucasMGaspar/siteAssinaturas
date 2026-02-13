@@ -458,10 +458,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative z-10 px-4">
-          <div className="flex gap-3 md:gap-5 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide">
+        <div className="relative z-10 container mx-auto px-4 max-w-6xl">
+          <div className="flex gap-3 md:gap-5 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 scrollbar-hide md:grid md:grid-cols-4">
             {steps.map((step, index) => (
-              <div key={index} className="flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[280px] snap-center">
+              <div key={index} className="flex-shrink-0 w-[70vw] sm:w-[45vw] md:w-auto snap-center">
                 <div className="feature-card rounded-2xl md:rounded-3xl p-5 md:p-7 h-full">
                   <div className="flex flex-col items-center text-center">
                     <div className="w-11 h-11 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-3 md:mb-5">
