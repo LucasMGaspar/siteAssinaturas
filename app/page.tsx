@@ -443,12 +443,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== HOW IT WORKS ===== */}
-      <section id="como-funciona" className="py-14 md:py-20 px-4 relative overflow-hidden">
+      {/* ===== HOW IT WORKS - SWIPE CAROUSEL ===== */}
+      <section id="como-funciona" className="py-14 md:py-20 relative overflow-hidden">
         <div className="absolute inset-0 aurora-bg opacity-10" />
 
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center mb-8 md:mb-14">
+        <div className="container mx-auto px-4 relative z-10 mb-8 md:mb-12">
+          <div className="text-center">
             <Badge className="highlight-badge text-primary text-xs md:text-sm px-4 py-2 rounded-full font-medium mb-4 md:mb-5">
               Processo Simples
             </Badge>
@@ -456,13 +456,15 @@ export default function Home() {
               Como <span className="text-gradient-blue">Funciona?</span>
             </h2>
           </div>
+        </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5">
+        <div className="relative z-10 px-4">
+          <div className="flex gap-3 md:gap-5 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide">
             {steps.map((step, index) => (
-              <div key={index} className="group">
-                <div className="feature-card rounded-2xl md:rounded-3xl p-4 md:p-7 h-full">
+              <div key={index} className="flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[280px] snap-center">
+                <div className="feature-card rounded-2xl md:rounded-3xl p-5 md:p-7 h-full">
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-11 h-11 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-3 md:mb-5 group-hover:bg-primary/20 transition-colors">
+                    <div className="w-11 h-11 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-3 md:mb-5">
                       <step.icon className="h-5 w-5 md:h-7 md:w-7 text-primary" />
                     </div>
                     <span className="text-3xl md:text-5xl font-extrabold text-primary/15 mb-2">{step.number}</span>
